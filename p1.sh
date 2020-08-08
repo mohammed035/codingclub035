@@ -1,7 +1,18 @@
 #! /bin/bash -x
-a=$((RANDOM%100))
-b=$((RANDOM%100))
-c=$((RANDOM%100))
-d=$((RANDOM%100))
-e=$((RANDOM%100))
+read -p "enter number" n
+if [ $n -eq 1 ]
+then 
+echo "one"
+elif [ $n -eq 2 ]
+then
+echo "tw0"
+elif [ $n -eq 3 ]
+then 
+echo "three"
+elif [ $n -eq 4 ]
+then
+echo "four"
+else 
+echo "five"
+fi
 

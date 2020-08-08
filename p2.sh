@@ -1,20 +1,24 @@
 #! /bin/bash -x
-read -p "enter the date" date
-read -p "enter the month" month
-if [ $month -gt 2 ] && [ $month -lt 7 ]
-then 
-	if [ $month -eq 3 ] && [ $date -lt 20]
-	then 
-			echo "false"
-	elif [ $month -eq 6 ] && [ $date -gt 20 ]
-	then
-			echo "false"
-	elif [ $date -gt 31 ] && [ $date -lt 1]
-	then 
-			echo "invalid date"
-	else 
-		echo "true"
-	fi
-else
-	echo "false"
+read -p "enter a number" n 
+if [ $n -eq 0 ]
+then
+	echo "monday"
+elif [ $n -eq 1 ]
+then
+	echo "tuesday"
+elif [ $n -eq 2 ]
+then
+	echo "wednessday"
+elif [ $n -eq 3 ]
+then
+	echo "thusday"
+elif [ $n -eq 4 ] 
+then
+	echo "friday"
+elif [ $n -eq 5 ]
+then
+	echo "saturday"
+else 
+	echo "sunday"
 fi
+
