@@ -1,24 +1,25 @@
 #! /bin/bash -x
-read -p "enter a number" n 
-if [ $n -eq 0 ]
-then
+read -p "enter a number" num
+case $num in
+0)
 	echo "monday"
-elif [ $n -eq 1 ]
-then
+	;;
+2)
 	echo "tuesday"
-elif [ $n -eq 2 ]
-then
+	;;
+3)
 	echo "wednessday"
-elif [ $n -eq 3 ]
-then
+	;;
+4)
 	echo "thusday"
-elif [ $n -eq 4 ] 
-then
+	;;
+5)
 	echo "friday"
-elif [ $n -eq 5 ]
-then
+	;;
+6)
 	echo "saturday"
-else 
+	;;
+7)
 	echo "sunday"
-fi
-
+	;;
+esac
